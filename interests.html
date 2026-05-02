@@ -137,6 +137,23 @@
     #footer-links a:hover {
         color: #f0eee9;
     }
+    @media (max-width: 991px) {
+    #intro {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+    .interest-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .interest-block2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #about-inner {
+        flex-direction: column;
+    }
+}
     @media (max-width: 767px) {
     #navbar {
         padding: 16px 20px;
@@ -172,13 +189,38 @@
         text-align: center;
     }
 }
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2em;
+    }
+    #intro {
+        padding: 30px 16px;
+    }
+    #about {
+        padding: 30px 16px;
+    }
+    #interests {
+        padding: 30px 16px;
+    }
+    #header {
+        padding: 30px 16px;
+    }
+    #content {
+        padding: 30px 16px;
+    }
+    #footer {
+        padding: 20px 16px;
+    }
+}
+
     </style>
 </head>
 <body>
     <div id="navbar">
         <p id="nav-logo">JAPE</p>
         <ul id="menu">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="interests.html" class="active">Interests</a></li>
             <li><a href="experience.html">Experience</a></li>
         </ul>
