@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 7 | Puzzle</title>
+</head>
+
+<style>
+ body{
+    text-align: center;
+} 
+#puzzle{
+    display: flex;
+    margin: auto auto;
+    flex-wrap: wrap;
+    width: 600px;
+}
+img{
+    width: 200px;
+    height: auto;
+    
+}
+#top-left{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+#middle-right{
+    position: relative;
+    right: 40px;
+    top: 30px;
+    box-shadow: 5px 5px 5px 5px;
+}
+#bottom-middle{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+</style>
+
+<body>
+    <h1>Kirby Puzzle</h1>
+    <div id="puzzle">
+        <img id="top-left" src="img/row-1-column-1.webp" alt="top left image">
+        <img src="img/row-1-column-2.webp" alt="top middle image">
+        <img src="img/row-1-column-3.webp" alt="top left image">
+        <img src="img/row-2-column-1.webp" alt="middle left image">
+        <img src="img/row-2-column-2.webp" alt="middle middle image">
+        <img id="middle-right" src="img/row-2-column-3.webp" alt="middle right image">
+        <img src="img/row-3-column-1.webp" alt="bottom left image">
+        <img id="bottom-middle" src="img/row-3-column-2.webp" alt="bottom middle image">
+        <img src="img/row-3-column-3.webp" alt="bottom right image">
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Page | Jesus Peralta</title>
+</head>
+<style>
+    @font-face {
+    font-family: Airstrike;
+    src: url("airstrike.ttf");
+    }
+    video{
+        width: 800px;
+        height: auto;
+    }
+    body{
+        margin: 0;
+        text-align: center;
+    }
+    h1{
+        font-family: Airstrike, sans-serif;
+        margin-top: 30px;
+        color: white;
+        font-size: 60px;
+
+    }
+    p{
+        max-width: 290px;
+        font-size: 18px;
+        color: white;
+        font-family: Tahoma, sans-serif;
+    }
+    body{
+        background-color: black;
+        margin: 0;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 40px;
+    }
+    
+      
+</style>
+<body>
+    <!-- <iframe id="background" src="https://www.youtube.com/embed/r9dd6csVZbk?si=NtQwZmk7WSpIeTYD"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- tried putting a background video :(   )))) -->
+    <h1><em><strong>Alarmo</strong></em></h1>
+
+    <div class="content">
+    <div id="video">
+    <video controls autoplay muted loop>
+        <source src="videos/ALARM.mp4"> 
+    </video>
+    </div>
+    <p>
+        The HEYwire Alarm Clock is a smart alarm system designed for users to actually get out of bed. 
+        Using a Raspberry Pi and a thermal sensor, the device detects body heat and only turns off once the user has physically left their bed. 
+        It features a gentle PreAlarm phase to gradually wake the user, followed by a louder alarm paired with a color changing smart light to add chaos!
+        The system communicates with an Android alarm app using an MQTT server, allowing perfect harmony between hardware and software. 
+        By combining sensing with interactive feedback, the HEYwire Alarm Clock offers an effective and reliable way to start the day.
+    </p>
+    </div>
+    
+</body>
+</html>

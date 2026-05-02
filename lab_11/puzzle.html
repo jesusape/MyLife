@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 7 | Puzzle</title>
+</head>
+
+<style>
+ body{
+    text-align: center;
+} 
+#puzzle{
+    display: flex;
+    margin: auto auto;
+    flex-wrap: wrap;
+    width: 600px;
+}
+img{
+    width: 200px;
+    height: auto;
+    
+}
+#top-left{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+#middle-right{
+    position: relative;
+    right: 40px;
+    top: 30px;
+    box-shadow: 5px 5px 5px 5px;
+}
+#bottom-middle{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+</style>
+
+<body>
+    <h1>Kirby Puzzle</h1>
+    <div id="puzzle">
+        <img id="top-left" src="img/row-1-column-1.webp" alt="top left image">
+        <img id="top-middle" src="img/row-1-column-2.webp" alt="top middle image">
+        <img id="top-right" src="img/row-1-column-3.webp" alt="top right image">
+        <img id="middle-left" src="img/row-2-column-1.webp" alt="middle left image">
+        <img id="middle-middle" src="img/row-2-column-2.webp" alt="middle middle image">
+        <img id="middle-right" src="img/row-2-column-3.webp" alt="middle right image">
+        <img id="bottom-left" src="img/row-3-column-1.webp" alt="bottom left image">
+        <img id="bottom-middle" src="img/row-3-column-2.webp" alt="bottom middle image">
+        <img id="bottom-right" src="img/row-3-column-3.webp" alt="bottom right image">
+    </div>
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+    <script>
+        new Draggabilly('#top-left');
+        new Draggabilly('#top-middle');
+        new Draggabilly('#top-right');
+        new Draggabilly('#middle-left');
+        new Draggabilly('#middle-middle');
+        new Draggabilly('#middle-right');
+        new Draggabilly('#bottom-left');
+        new Draggabilly('#bottom-middle');
+        new Draggabilly('#bottom-right');
+    </script>
+    
+</body>
+
+</html>

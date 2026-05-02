@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects | Jesus Peralta</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-image: url(img/background.avif);
+        background-size: cover;
+    }
+    
+    #gallery{
+        position: relative;
+        width: 350px;         
+        height: 350px;        
+        margin: 150px 500px;
+    }
+
+    
+    img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        transition: 1s;
+    }
+    #gallery img{
+        background-color: rgb(143, 134, 134);
+        padding: 12px;
+        position: absolute;
+
+    }
+    
+
+    #img3{
+        transform: rotate(9deg) translateX(75px)
+    }
+    #img2{
+        transform: rotate(5deg) translateX(50px);
+    }
+    #gallery:hover #img1{
+        transform: rotate(-8deg) translateX(-350px) scale(1.6); 
+        transition: 1s;
+    }
+    #gallery:hover #img2{
+        transform: rotate(15deg) translateX(80px) scale(1.6); 
+        transition: 1s;
+
+    }
+    #gallery:hover #img3{
+        transform: rotate(30deg) translateX(400px) scale(1.6); 
+        transition: 1s;
+    }
+    h1{
+        color: aliceblue;
+    }
+</style>
+<body>
+    <h1>THE KIRBY GALLERY</h1>
+
+    <div id="gallery">    
+        <img id="img3" src="img/kirby3.jpg" alt="Kirby">
+        <img id="img2" src="img/kirby2.jpg" alt="Kirby">
+        <img id="img1" src="img/kirby1.jpg" alt="Kirby">
+    </div>
+    
+</body>
+</html>

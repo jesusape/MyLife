@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jesus Peralta | Form</title>
+<style>
+
+button{
+    padding: 5px 10px;
+    margin: 5px;
+}
+.form-row{
+    display: flex;
+    margin: 15px 0px;
+}
+.form-col{
+	width: 180px;
+}
+
+</style>
+</head>
+<body>
+    <h1>Gym Member Ship Form</h1>
+    <form action="confirmation.html">
+
+        <div class="form-row">
+            <div class="form-col">
+                <label for="name-id">
+                    Name:
+                </label>
+                
+            </div>
+
+            <input type="text" id="name-id" placeholder="Jesus Peralta">
+
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <label for="email-id">
+                    Email:
+                </label>
+            </div>
+
+            <input type="email" id="email-id" placeholder="jesusape@usc.edu">
+        </div>
+
+        <div class="form-row">
+                <div class="form-col">
+                    Experience:
+                </div>
+                <label >
+                <input type="radio" name="student">
+                Pro
+                </label>
+                <label >
+                <input type="radio" name="student">
+                Intermediate
+                </label>
+                <label >
+                <input type="radio" name="student">
+                Average
+                </label>
+                <label >
+                <input type="radio" name="student">
+                New
+                </label>
+                
+        </div>
+        <div class="form-row">
+                <div class="form-col">
+                    Term of Membership
+                </div>
+                <label>
+                    <input type="checkbox">
+                    1 Year
+                </label>
+                <label>
+                    <input type="checkbox">
+                    2 Years
+                </label>
+                <label>
+                    <input type="checkbox">
+                    3 Years
+                </label>
+                
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <label for="Goal">What is your main goal?</label>
+            </div>
+            <select  id="Goal">
+                <option>Arms</option>
+                <option>Legs</option>
+                <option>Back</option>
+                <option>Core</option>
+            </select>
+                
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <label for="Qs">Questions/Concerns</label>
+            </div>
+            <textarea id="Qs" placeholder="I'm worried about.."></textarea>
+
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+            </div>
+                <label>
+                    <input type="checkbox">
+                    I accept terms & conditions.
+                </label>
+                
+                
+        </div>
+
+        <div class="form-row">
+            <div class="form-col">
+            </div>
+            <button id="submit-btn" type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </div>
+
+   
+    
+    
+    </form>
+
+</body>
+</html>

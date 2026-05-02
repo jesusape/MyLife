@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hobby | Gallery</title>
+</head>
+    <link rel="stylesheet" href="main.css">
+<style>
+    #header {
+        background-image: url("img/group_gbb.png");
+        padding-top: 300px;
+        padding-bottom: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 38%;
+        height: 100px;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 5px #000000;
+        font-size: 4em;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    
+
+    #content {
+        padding: 15px;
+        padding-top: 10px;
+        background-color: white;
+        width: 1200px;
+        margin: auto;
+        
+    }
+
+    .outer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        
+    }
+    .inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 580px;
+        gap: 15px;
+        
+    }
+
+    .box {
+        background: lightgray;
+        border: 1px solid black;
+        padding: 40px;
+        height: 200px;
+        width: 200px;
+    }
+    #long{
+        width: 498px;
+    }
+    #bigbox{
+        height: auto;
+        width: 498px;
+    }
+    
+
+   
+</style>
+
+<body>
+    <div id="header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div id="navbar">
+        <a href="hobby.html" >Home</a>
+        <a href="gallery.html" id="active">Gallery</a>
+    </div>
+    
+
+    <div id="content">
+        <h2>Known Beatboxers</h1>
+        <div class="outer">
+                <div id="long" class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+
+            <div class="inner">
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
+
+            <div id="bigbox"class="box">8</div>
+            <div id="long" class="box">9</div>
+            <div id="long" class="box">10</div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        University of Southern California &copy; 2026
+    </div>
+
+</body>
+
+</html>

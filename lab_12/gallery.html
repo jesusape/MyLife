@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jesus Peralta | Gallery</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    #gallery {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 10px;
+
+    }
+
+    .size {
+        width: auto;
+        height: 200px;
+        margin-left: 0px;
+        opacity: 0.3;
+    }
+
+    .size:hover {
+        opacity: 1;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        color: azure;
+    } 
+
+    #gallery img:hover {
+        border: none
+    }
+
+    #gallery img {
+        border: none
+    }
+
+    h1:hover {
+        color: aqua;
+    }
+
+    .size+p {
+        text-align: center;
+        visibility: hidden;
+    }
+
+    .size:hover+p {
+        visibility: visible;
+    }
+
+    p {
+        font-size: 30px;
+        color: white;
+    }
+    
+</style>
+
+
+<body>
+    <h1>My Interest and Hobbies</h1>
+
+    <div id="gallery">
+        <div class="image-container">
+            <img class="size" id="img1"src="img/beatbox.jpg" alt="Beatboxing">
+            <p>Beatboxing</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" id="img2" src="img/coding.jpg" alt="Coding">
+            <p>Coding</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" id="img3" src="img/ee.webp" alt="Electrical Engineer">
+            <p>Electrical Engineer</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" id="img4" src="img/optic.jpeg" alt="Optic COD">
+            <p>Optic Gaming</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" id="img5"src="img/sleeping.jpeg" alt="Sleeping">
+            <p>Sleeping</p>
+        </div>
+    </div>
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script>
+        $("#img1").click(function() {
+            $(".size").css("border", "none");
+            $("#img1").css("border", "3px solid rgb(186, 68, 202)");
+        });
+ 
+        $("#img2").click(function() {
+            $(".size").css("border", "none");
+            $("#img2").css("border", "3px solid rgb(186, 68, 202)");
+        });
+ 
+        $("#img3").click(function() {
+            $(".size").css("border", "none");
+            $("#img3").css("border", "3px solid rgb(186, 68, 202)");
+        });
+ 
+        $("#img4").click(function() {
+            $(".size").css("border", "none");
+            $("#img4").css("border", "3px solid rgb(186, 68, 202)");
+        });
+ 
+        $("#img5").click(function() {
+            $(".size").css("border", "none");
+            $("#img5").css("border", "3px solid rgb(186, 68, 202)");
+        });
+    </script>
+</body>
+
+</html>

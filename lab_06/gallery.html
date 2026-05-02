@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jesus Peralta | Gallery</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    #gallery {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 10px;
+
+    }
+
+    .size {
+        width: auto;
+        height: 200px;
+        margin-left: 0px;
+        opacity: 0.3;
+    }
+
+    .size:hover {
+        opacity: 1;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        color: azure;
+    }
+
+    #gallery img:hover {
+        border: 3px solid rgb(186, 68, 202);
+    }
+
+    #gallery img {
+        border: 3px solid black;
+    }
+
+    h1:hover {
+        color: aqua;
+    }
+
+    .size+p {
+        text-align: center;
+        visibility: hidden;
+    }
+
+    .size:hover+p {
+        visibility: visible;
+    }
+
+    p {
+        font-size: 30px;
+        color: white;
+    }
+</style>
+
+
+<body>
+    <h1>My Interest and Hobbies</h1>
+
+    <div id="gallery">
+        <div class="image-container">
+            <img class="size" src="img/beatbox.jpg" alt="Beatboxing">
+            <p>Beatboxing</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" src="img/coding.jpg" alt="Coding">
+            <p>Coding</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" src="img/ee.webp" alt="Electrical Engineer">
+            <p>Electrical Engineer</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" src="img/optic.jpeg" alt="Optic COD">
+            <p>Optic Gaming</p>
+        </div>
+
+        <div class="image-container">
+            <img class="size" src="img/sleeping.jpeg" alt="Sleeping">
+            <p>Sleeping</p>
+        </div>
+    </div>
+</body>
+
+</html>

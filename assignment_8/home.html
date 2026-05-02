@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am majoring in Electrical Engineering so I want to showcase what I have in the website in the home and just have the user get to know me and my motivations.">
+    <title>Portfolio | Home</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: rgb(13, 13, 13);
+        color: #f0eee9;
+        font-family: 'Sans-serif', sans-serif;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 60px;
+        background-color: rgb(13, 13, 13);
+        border-bottom: 1px solid rgb(39, 37, 37);
+
+    }
+    #nav-logo{
+        font-size: 1.4em;
+        color: #DCCDE8;
+        margin: 0;
+    }
+    #menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 7px;
+    }
+    #menu a{
+        color: #777;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: 0.5s;
+        display: block;
+        text-decoration: none;
+    }
+    
+    #menu li a:hover{
+        color: rgb(225, 222, 216);
+        background-color: rgb(42, 41, 41);
+    }
+    #menu li a.active{
+        color:#DCCDE8;
+        background-color: rgb(30, 21, 32);
+    }
+    #intro{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        padding: 100px 60px 80px 60px;
+        border-bottom: 1px solid rgb(37, 37, 37);
+    }
+    #intro img{
+        height: 450px;
+        width: 450px;
+        object-fit:cover;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 4em;
+        color: aliceblue;
+    }
+    h1 em{
+        color: #DCCDE8;
+    }
+    #label{
+        color: #5C9EAD;
+        margin-bottom: 16px;
+    }
+    #about{
+        padding: 80px 60px;
+        border-bottom: 1px solid #252525;
+    }
+    #about-label{
+        color: #735D78;
+        letter-spacing: 3px;
+        margin-bottom: 40px;
+    }
+    #about-inner{
+        display: flex;
+        gap: 80px;
+        align-items: flex-start;
+    }
+    #about-text{
+        flex: 1;
+    }
+    h2{
+        font-size: 2.5em;
+        color: rgb(240, 238, 233);
+        margin: 0 0 24px 0;
+    }
+    #about-text p{
+        margin-bottom: 18px;
+    }
+    #about img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    #footer {
+        padding: 40px 60px;
+        text-align: center;
+        background-color: rgb(10, 10, 10);
+    }
+    #footer p {
+    color: rgb(119, 119, 119);
+    margin: 0;
+    }
+    #intro-img{
+        padding-right: 150px;
+    }
+
+</style>
+
+<body>
+    <div id="navbar">
+        <p id="nav-logo">JAPE</p>
+        <ul id="menu">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="">Interests</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Research</a></li>
+        </ul>
+                
+    </div>
+
+    <div id="intro">
+        <div id="intro-text">
+            <p id="label">Electrical Engineer & Gamer</p>
+            <h1>Jesus<br><em>Peralta-Estrada</em></h1>
+            <p id="quote">"If you're going to try something, do it with all you're heart"</p>
+        </div>
+        <div id="intro-img">
+        <img src="img/HEADSHOT.JPG" alt="Picture of Me">
+        </div>
+    </div>
+    <div id="about">
+        <p id="about-label"> </p>
+        <div id="about-inner">
+            <div>
+            <img src="img/SNAKE.png" alt="Snake">
+            </div>
+            <div id="about-text">
+                <h2>Who I Am</h2>
+                <p>I'm Jesus Peralta, an Electrical Engineering student at the University of Southern California.
+                I grew up with a curiosity for how things work, especially with math and electricity. One thing that has always stuck
+                out to me though is video games. I've always lovd committing to a game for a while and play it all the way through. I specifically love COD and 
+                have even played it competitively. 
+                </p>
+
+                <p>
+                    My goal is to ultimately get a Masters in Electrical Engineering though PDP at USC. My favorite part of EE has been learning embedded systems and 
+                    digital design logic. I love coding at a low-level and seeing it be applied in my very eyes with a circuit I made. I would love to one day have mastered
+                    VLSI and work anywhere, so I can get experience. 
+                </p>
+
+                <p>
+                    I get my work ethic from my parents because since I've been a kid, they have alwasy worked and have not skipped a day of work. I am a first-gen 
+                    and low-income student, so the motivation to make my parents proud is my main fuel. Their sacrfices when they migrated to the United States have lead me
+                    to the opportunities I have today. I can do it Mom and Dad. I promise.
+                </p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+    <p>Jesus Peralta &copy; 2026</p> 
+    </div>
+    
+</body>
+
+</html>
